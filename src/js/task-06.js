@@ -5,7 +5,7 @@ validationInput.addEventListener('blur', event => {
   const valueInput = validationInput.value;
   const lengthInput = valueInput.length;
 
-  if (lengthInput === inputDatalength) {
+  if (lengthInput >= inputDatalength) {
     validationInput.classList.add('valid');
     validationInput.classList.remove('invalid');
   } else {
