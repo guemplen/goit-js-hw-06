@@ -1,7 +1,7 @@
 const fontResizer = document.getElementById('font-size-control');
 const textSpan = document.getElementById('text');
 
-fontResizer.addEventListener('input', function () {
+fontResizer.addEventListener('input', event => {
   const sizeValue = fontResizer.value;
   textSpan.style.fontSize = sizeValue + 'px';
 });

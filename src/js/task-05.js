@@ -1,7 +1,7 @@
 const textInput = document.getElementById('name-input');
 const spanText = document.getElementById('name-output');
 
-textInput.addEventListener('input', function () {
+textInput.addEventListener('input', event => {
   const newText = textInput.value;
   spanText.textContent = newText;
   if (textInput.value === '') {
