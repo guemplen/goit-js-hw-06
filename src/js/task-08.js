@@ -13,6 +13,7 @@ function onFormSubmit(event) {
       password,
     };
     console.log(formData);
+    formLogin.reset();
   } else {
     alert(`All fields must be filled!`);
   }
